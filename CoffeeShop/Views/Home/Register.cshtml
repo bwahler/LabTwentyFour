@@ -1,0 +1,23 @@
+﻿<br />
+<form action="Welcome" method="post" class="pure-form">
+    <fieldset>
+        <legend><b>Hello! Please register below:</b></legend>
+        <input type="text" name="FirstName" placeholder="First Name" required class="form-control" pattern="^[a-zA-Z]{2,}$"/> <br /><br />
+        <input type="text" name="LastName" placeholder="Last Name" required class="form-control" /> <br /><br />
+        <input type="email" name="Email" placeholder="Email" class="form-control" /><br /><br />
+        <input type="text" name="PhoneNumber" placeholder="Phone Number" pattern="(?:\d{1}\s)?\(?(\d{3})\)?-?\s?(\d{3})-?\s?(\d{4})" class="form-control" /><br /><br />
+        <b>BirthDate:</b><input type="date" name="BirthDate" class="form-control" /><br /><br />
+    </fieldset>
+    <input type="password" name="password" placeholder="Password" required class="form-control" /><br /><br />
+    <input type="password" name="password" placeholder="Confirm Password" required class="form-control" /><br /><br />
+    <input type="radio" name="gender" value="Female" /> Female<br /><br />
+    <input type="radio" name="gender" value="Male" /> Male<br /><br />
+    <input type="radio" name="gender" value="Non-Binary" /> Non-Binary<br /><br />
+    <h4><b>Coffee Type:</b></h4>
+    <select name="CoffeeType">
+        <option value="Regular">Regular</option>
+        <option value="Decaf">Decaf</option>
+    </select>
+    <br /><br />
+    <input type="submit" value="Register" class="btn"/>
+</form>
